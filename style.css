@@ -1,0 +1,86 @@
+body{
+    background-color: aqua;
+   
+}
+
+.board{
+    
+    width: 500px;
+    height:500px;
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,auto);
+
+
+    
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+}
+#cell0,
+#cell1,
+#cell2{
+    border-top: none;
+}
+#cell0,
+#cell3,
+#cell6{
+    border-left: none;
+}
+#cell6,
+#cell7,
+#cell8{
+    border-bottom: none;
+}
+#cell2,
+#cell5,
+#cell8{
+    border-right: none;
+}
+button{
+    background-color:blanchedalmond;
+    color:dimgrey;
+    font-size: 20px;
+    width: 50%;
+    height: 30px;
+}
+button:hover{ 
+    background-color: black;
+    color: beige;
+}
+
+.x-class,
+.o-class{
+    cursor:not-allowed;
+}
+
+
+.x-class{
+    background-image: url(/img/times-solid.svg);
+  
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.o-class{
+    background-image: url(/img/grin-tongue-wink-regular.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.winning-message{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 500px;
+}
